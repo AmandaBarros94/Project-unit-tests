@@ -18,11 +18,11 @@ const average = (array) => {
   if (array.length === 0) {
     return undefined;
   }
-  for (let index = 0; index < array.length; index += 1) {
-    if (typeof array[index] !== 'number') {
+  for (let contador = 0; contador < array.length; contador += 1) {
+    if (typeof array[contador] !== 'number') {
       return undefined;
     }
-    somaDoArray += array[index];
+    somaDoArray += array[contador];
   }
   return Math.round(somaDoArray / array.length);
 };
